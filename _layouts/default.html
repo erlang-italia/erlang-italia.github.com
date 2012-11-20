@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>{{ page.title }}</title>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <meta content="{{ page.description }}" name="description">
   <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css" />
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
   <!--[if IE]>
@@ -18,12 +18,7 @@
       <h1 id="title"><a href="/">Erlang Italia</a></h1>
       <nav>
         <ul class="unstyled">
-          <li><a href="/what.html">What</a></li>
-          <li><a href="/learn.html">Learn</a></li>
-          <li><a href="/posts.html">Posts</a></li>
-          <li><a href="/jobs.html">Jobs</a></li>
-          <li><a href="/team.html">Team</a></li>
-          <li><a href="/links.html">Links</a></li>
+          {% include navigation.html %}
         </ul>
       </nav>
     </header>
@@ -36,12 +31,7 @@
       <nav>
         <ul class="unstyled">
           <li><a href="/">Home</a></li>
-          <li><a href="/what.html">What</a></li>
-          <li><a href="/learn.html">Learn</a></li>
-          <li><a href="/posts.html">Posts</a></li>
-          <li><a href="/jobs.html">Jobs</a></li>
-          <li><a href="/team.html">Team</a></li>
-          <li><a href="/links.html">Links</a></li>
+          {% include navigation.html %}
         </ul>
       </nav>
     </footer>
